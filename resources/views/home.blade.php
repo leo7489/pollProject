@@ -38,8 +38,10 @@
                         <div class="card-header">
                             <div class="row">
                                 <div class="col-md-9">
-                                    <strong> {{ ($index+1).". "}}</strong>{{ $question['poll_name'] }}
-                                    <br><small>{{ $question['description'] }}</small>
+                                    <a href="">
+                                        <strong> {{ ($index+1).". "}}</strong>{{ $question['poll_name'] }}
+                                        <br><small>{{ $question['description'] }}</small>
+                                    </a>
                                 </div>
                                 
                                 <div class="col-md-3 mt-1">

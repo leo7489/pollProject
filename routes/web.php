@@ -29,6 +29,7 @@ Route::get("/poll/{poll}", [PollController::class, 'show'])->middleware('can:isA
 Route::delete("/polls/{poll}", [PollController::class, 'destroy'])->middleware('can:isAdmin');
 Route::get("/polls/edit/{poll}", [PollController::class, 'edit'])->middleware('can:isAdmin');
 Route::put("/polls/{poll}", [PollController::class, 'update'])->middleware('can:isAdmin');
+Route::get("/polls/report/{id}", [PollController::class, 'report'])->middleware('can:isAdmin');
 
 Route::get("/poll/{poll}/pollOption/create", [PollOptionController::class, 'create'])->middleware('can:isAdmin');
 Route::post("/poll/{poll}/pollOptions", [PollOptionController::class, 'store'])->middleware('can:isAdmin');

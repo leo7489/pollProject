@@ -15,6 +15,10 @@ class PollResult extends Model
         return $this->belongsTo(PollOption::class);
     }
 
+    public function poll(){
+        return $this->belongsTo(Poll::class);
+    }
+
     public function user(){
         return $this->belongsTo(User::class);
     }

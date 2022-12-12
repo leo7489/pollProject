@@ -12,6 +12,10 @@ class Poll extends Model
     protected $guarded = [];
 
     public function pollOptions(){
-        return $this->hasMany('PollOption::class');
+        return $this->hasMany(PollOption::class);
+    }
+
+    public function pollResults(){
+        return $this->hasMany(PollResult::class);
     }
 }

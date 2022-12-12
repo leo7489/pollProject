@@ -38,7 +38,7 @@
                         <div class="card-header">
                             <div class="row">
                                 <div class="col-md-9">
-                                    <a href="">
+                                    <a href="/polls/{{ $question['poll_id'] }}/report">
                                         <strong> {{ ($index+1).". "}}</strong>{{ $question['poll_name'] }}
                                         <br><small>{{ $question['description'] }}</small>
                                     </a>

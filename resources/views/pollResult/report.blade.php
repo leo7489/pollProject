@@ -14,14 +14,7 @@
                         </div>
                     @endif
                     
-                    <div class="row">
-                        <div class="col-md-8">
-                            <h3>Here is your survey report</h3>
-                        </div>
-                        <div class="col-md-4">
-                        <a href="/home" class="btn btn-primary">Home Page</a>
-                        </div>
-                    </div>
+                    <h3>Here is your survey report</h3>
                 </div>
             </div>
 
@@ -47,7 +40,9 @@
                         </div>
                     </div>
                 @endforeach
-            </form> 
+            </form>
+            <br>
+            <a href="/home" class="btn btn-primary">Home Page</a>
         </div>
     </div>
 </div>

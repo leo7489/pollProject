@@ -4,6 +4,8 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Models\Poll;
+use App\Models\PollOption;
+use App\Models\PollResult;
 use DB;
 use Carbon\Carbon;
 
@@ -63,6 +65,19 @@ class PollController extends Controller
     {
         return view('poll.show', ['poll' => Poll::findOrFail($id)]);
     }
+
+    /**
+     * Display the poll response for the specific poll
+     * @param  Poll  $poll
+     */
+    public function report(POll $poll){
+
+        $poll->load('pollOptions.pollResults');    
+
+        return view('poll.report', ['poll' => $poll]);
+    }
+
+
 
     /**
      * Show the form for editing the specified resource.

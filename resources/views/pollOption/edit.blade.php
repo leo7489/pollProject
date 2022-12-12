@@ -33,7 +33,7 @@
                                     </div> 
                                 </div>
                             @endforeach
-                            <button type="submit" class="btn btn-primary">Update Options</button>
+                            <button type="submit" class="btn btn-accent">Update Options</button>
                         </form>
                     
                 </div>

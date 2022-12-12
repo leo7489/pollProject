@@ -13,7 +13,7 @@
                             {{ session('status') }}
                         </div>
                     @endif
-                    <!-- <a href="/survey" class="btn btn-dark">Take Survey</a> -->
+                    <!-- <a href="/survey" class="btn btn-primary">Take Survey</a> -->
                     <h3>Please finish all questions. Thank you</h3>
                 </div>
             </div>
@@ -41,7 +41,7 @@
                     </div>
                 @endforeach
 
-                <button type="submit" class="btn btn-primary mt-4">Submit Survey</button>
+                <button type="submit" class="btn btn-accent mt-4">Submit Survey</button>
             </form>
 
             

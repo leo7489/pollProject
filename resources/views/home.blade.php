@@ -15,17 +15,17 @@
                     @endif
 
                     @can('isAdmin')
-                        <a href="/poll/create" class="btn btn-primary">Create New Poll</a>
+                        <a href="/poll/create" class="btn btn-accent">Create New Poll</a>
                     @endcan
 
                     @can('isUser')
                         @if(!$hasDone)
-                            <a href="/survey" class="btn btn-dark">Take Survey</a>
+                            <a href="/survey" class="btn btn-primary">Take Survey</a>
                         @endif
 
                         @if($hasDone)
                             <h4>Congratulations, you have finished the survey.</h4>
-                            <a href="/survey/report" class="btn btn-success">Check My Survey</a>
+                            <a href="/survey/report" class="btn btn-primary">Check My Survey</a>
                         @endif
                     @endcan
                     

@@ -8,7 +8,7 @@
                 <div class="card-header">{{ $poll->name }}</div>
 
                 <div class="card-body">
-                    <a href="/poll/{{ $poll->id }}/pollOption/create" class="btn btn-primary">Add New Poll Options</a>
+                    <a href="/poll/{{ $poll->id }}/pollOption/create" class="btn btn-accent">Add New Poll Options</a>
                 </div>
             </div>
         </div>

@@ -19,7 +19,7 @@
                             <h3>Here is your survey report</h3>
                         </div>
                         <div class="col-md-4">
-                        <a href="/home" class="btn btn-success">Home Page</a>
+                        <a href="/home" class="btn btn-primary">Home Page</a>
                         </div>
                     </div>
                 </div>

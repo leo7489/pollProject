@@ -7,6 +7,7 @@
         <title>Laravel</title>
 
         <!-- Fonts -->
+        <link href="https://fonts.google.com/specimen/Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
         <link href="https://fonts.bunny.net/css2?family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
 
         <!-- Styles -->
@@ -16,7 +17,7 @@
 
         <style>
             body {
-                font-family: 'Nunito', sans-serif;
+                font-family: 'Montserrat', 'Nunito', sans-serif;
             }
         </style>
     </head>
@@ -99,7 +100,7 @@
 
                                         <div class="row mt-2">
                                             <div class="col-md-12 offset-md-4">
-                                                <button type="submit" class="btn btn-primary btn-lg">
+                                                <button type="submit" class="btn btn-accent btn-lg">
                                                     <strong>{{ __('Login') }}</strong>
                                                 </button>
 

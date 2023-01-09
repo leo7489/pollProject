@@ -47,75 +47,74 @@
 
                 <h1>Welcome to Leo's Survey Site</h1>
 
-                <div class="py-4">
-                    <div class="row justify-content-center">
-                        <div class="col-md-12">
-                            <div class="card">
-                                <div class="card-header"><strong>{{ __('Login') }}</strong></div>
+                <div>
+                    <h3>Summary</h3>
+                
+                    <p>
+                        A poll provides a way to retrieve sampling or collection of opinions on a subject, taken
 
-                                <div class="card-body">
-                                    <form method="POST" action="{{ route('login') }}">
-                                        @csrf
+                        from either a selected or a random group of people for the purpose of analysis. This
 
-                                        <div class="row mb-3">
-                                            <label for="email" class="col-md-4 col-form-label text-md-end"><strong>{{ __('Email Address') }}</strong></label>
+                        simple poll feature will provide a question and two or more choices the user can select
 
-                                            <div class="col-md-6">
-                                                <input id="email" type="email" class="form-control @error('email') is-invalid @enderror" name="email" value="{{ old('email') }}" required autocomplete="email" autofocus>
+                        from.
+                    </p>
+                
+                    <h3>Requirements</h3>
 
-                                                @error('email')
-                                                    <span class="invalid-feedback" role="alert">
-                                                        <strong>{{ $message }}</strong>
-                                                    </span>
-                                                @enderror
-                                            </div>
-                                        </div>
+                    <ul class="list-group">
+                        <li class="list-group-item">An admin list screen is required to display a table of polls and a link in each row
 
-                                        <div class="row mb-3">
-                                            <label for="password" class="col-md-4 col-form-label text-md-end"><strong>{{ __('Password') }}</strong></label>
+                            to edit the post and view poll responses. A button should be present to allow a
 
-                                            <div class="col-md-6">
-                                                <input id="password" type="password" class="form-control @error('password') is-invalid @enderror" name="password" required autocomplete="current-password">
+                            user to navigate to the screen to add a new poll.
+                        </li>
+                        
+                        <li class="list-group-item">
+                            Add and edit screens are required to add new polls and update existing polls,
 
-                                                @error('password')
-                                                    <span class="invalid-feedback" role="alert">
-                                                        <strong>{{ $message }}</strong>
-                                                    </span>
-                                                @enderror
-                                            </div>
-                                        </div>
+                            this screen should be validated against the tables required fields.
+                        </li>
+                        <li class="list-group-item">
+                            Once a poll is published, i.e. the current date and time is within the start_date
 
-                                        <div class="row mb-3">
-                                            <div class="col-md-6 offset-md-4">
-                                                <div class="form-check">
-                                                    <input class="form-check-input" type="checkbox" name="remember" id="remember" {{ old('remember') ? 'checked' : '' }}>
+                            and finish_date range, the poll should not be editable.
+                        </li>
 
-                                                    <label class="form-check-label" for="remember">
-                                                        {{ __('Remember Me') }}
-                                                    </label>
-                                                </div>
-                                            </div>
-                                        </div>
+                        <li class="list-group-item">
+                            A user-facing interface is required to display a given poll and it should allow a
 
-                                        <div class="row mt-2">
-                                            <div class="col-md-12 offset-md-4">
-                                                <button type="submit" class="btn btn-accent btn-lg">
-                                                    <strong>{{ __('Login') }}</strong>
-                                                </button>
+                            user to submit their response to the poll.
+                        </li>
 
-                                                @if (Route::has('password.request'))
-                                                    <a class="btn btn-link btn-lg" href="{{ route('password.request') }}">
-                                                        <strong>{{ __('Forgot Your Password?') }}</strong>
-                                                    </a>
-                                                @endif
-                                            </div>
-                                        </div>
-                                    </form>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                        <li class="list-group-item">
+                            Once a user has submitted a response to the poll, the poll results should be
+
+                            displayed.
+                        </li>
+
+                        <li class="list-group-item">
+                            A user can only vote once per poll.
+                        </li>
+
+                        <li class="list-group-item">
+                            Please provide any documentation on how to get started with reviewing your
+
+                            code, for example if the database needs to be seeded or if any unit tests should
+
+                            be run.
+                        </li>
+
+                        <li class="list-group-item">
+                            Third item
+                        </li>
+
+
+                    </ul>
+        
                 </div>
+
+
             </div>
         </div>
     </body>
